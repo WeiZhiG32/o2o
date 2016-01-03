@@ -1,0 +1,138 @@
+.div1 {
+    height: 300px;
+    width: 500px;
+    /* background: #f00 url(http://d1c739w2xm33i4.cloudfront.net/2.2/top_image.jpg); */
+    background: url(../img/floor.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.div2 {
+    height: 300px;
+    width: 100%;
+    margin: auto;
+    /* background: #f00 url(http://d1c739w2xm33i4.cloudfront.net/2.2/top_image.jpg); */
+    background: url(../img/I-4_4.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.numberCircle {
+    border-radius: 50%;
+    behavior: url(PIE.htc);
+    /* remove if you don't care about IE8 */
+    width: 55px;
+    height: 55px;
+    padding: 8px;
+    background: #fff;
+    border: 2px solid black;
+    color: black;
+    text-align: center;
+    font: 32px Arial, sans-serif;
+    display: inline-block;
+}
+
+.bigNumberCircle {
+    border-radius: 50%;
+    behavior: url(PIE.htc);
+    /* remove if you don't care about IE8 */
+    width: 70px;
+    height: 50px;
+    padding: 3px;
+    background: #fff;
+    border: 2px solid black;
+    color: black;
+    text-align: center;
+    font: 32px Arial, sans-serif;
+    display: inline-block;
+}
+
+
+/*第一個圖*/
+
+.location1_0 {
+    position: absolute;
+    left: 30px;
+    top: 114px;
+}
+
+.location1_1 {
+    position: absolute;
+    left: 310px;
+    top: 60px;
+}
+
+.location1_2 {
+    position: absolute;
+    left: 450px;
+    top: 137px;
+}
+
+.location1_3 {
+    position: absolute;
+    left: 160px;
+    top: 194px;
+}
+
+
+/*第二個圖*/
+
+.location2_0 {
+    position: absolute;
+    left: 88px;
+    top: 0px;
+}
+
+.location2_1 {
+    position: absolute;
+    left: 195px;
+    top: 0px;
+}
+
+.location2_2 {
+    position: absolute;
+    left: 311px;
+    top: 0px;
+}
+
+.location2_3 {
+    position: absolute;
+    left: 413px;
+    top: 0px;
+}
+
+.location2_4 {
+    position: absolute;
+    left: 413px;
+    top: 120px;
+}
+
+.location2_5 {
+    position: absolute;
+    left: 413px;
+    top: 250px;
+}
+
+.location2_6 {
+    position: absolute;
+    left: 311px;
+    top: 250px;
+}
+
+.location2_7 {
+    position: absolute;
+    left: 195px;
+    top: 250px;
+}
+
+.location2_8 {
+    position: absolute;
+    left: 88px;
+    top: 250px;
+}
+
+.location2_9 {
+    position: absolute;
+    left: 86px;
+    top: 120px;
+}

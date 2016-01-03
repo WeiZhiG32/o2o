@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+<script language="javascript">
+
+
+// var member_work1 = setInterval(function() {
+//     member()
+// }, 1000);
+
+// function member(){
+	
+
+// 		text = new Array();
+// 		i = 0;
+// 		text[i++] = 1;
+// 		text[i++] = 2;
+// 		text[i++] = 4;
+// 		text[i++] = 6;
+// 		text[i++] = 7;
+// 		text[i++] = 9;
+
+// 		index = Math.floor(Math.random()*text.length);// 以亂數設定句子的索引值
+// 		document.write(text[index]);		
+
+// 		$.get("./o2o/d_record.php?name="+text[index]+"&place=統二鞋店");
+// }
+
+
+
+
+
+var myVar2 = setInterval(function() {
+    total()
+}, 500);
+
+var uuid = guid();
+
+
+function guid() {
+  function s4() {
+    return Math.floor((1 + Math.random()) * 0x10000)
+      .toString(16)
+      .substring(1);
+  }
+  return s4();
+}
+
+
+function total() {
+	place = new Array();
+		i = 0;
+		place[i++] = "統二鞋店";
+		place[i++] = "奇樂咖啡";
+		place[i++] = "城市3C";
+		place[i++] = "CCC";
+		place[i++] = "今生服飾";
+		place[i++] = "出口1";
+		place[i++] = "DDD";
+		place[i++] = "出口2";
+		place[i++] = "出口4";
+		place[i++] = "出口3";
+
+		index = Math.floor(Math.random()*place.length);// 以亂數設定句子的索引值
+
+	
+
+
+		var a=Math.floor(Math.random()*(200-0));
+		var uuid = guid();
+		// document.write(place[index]);
+
+    // $.get("/o2o/d_record.php?name="+place[index]+"&place=統二鞋店", function(data) {
+    	    $.get("/o2o/d_record.php?name="+uuid+"&place="+place[index]+"", function(data) {
+
+    	
+    }, "json");
+    document.getElementById("text_1").innerHTML ="/o2o/d_record.php?name="+uuid+"&place="+place[index]+"";
+    // document.getElementById("text_2").innerHTML =""+a+"";
+
+}
+
+
+
+
+
+
+</script> 
+
+</head>
+<body>
+
+
+
+
+<!-- <button onclick="member_work1">AAA</button> -->
+<p id="text_1">123</p><BR>
+<!-- <p id="text_2">456</p> -->
+<!-- <div id="text_1">9</div> -->
+</body>
+</html>
