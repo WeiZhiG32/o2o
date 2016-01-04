@@ -2,8 +2,8 @@
 
 $db_host = "localhost";
 $db_table = "o2o";
-$db_username="root";
-$db_password="i4401";
+$db_username="username";
+$db_password="password";
 
 if(!@mysql_connect($db_host, $db_username, $db_password)) die ("連線失敗1");
 
